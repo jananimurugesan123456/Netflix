@@ -15,7 +15,7 @@ const Added = () => {
 
   function postUser(e) {
     console.log("hi hello");
-    console.log(e.target);
+    // console.log(e.target);
   }
   return (
     <div className="App">
