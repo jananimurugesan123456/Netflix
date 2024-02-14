@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Exercise1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+    <title>Document</title>
+    
+</head>
+<body>
+    
+    <section class="wrappar">
+        <section class="bothsec">
+        <div class="sameline">
+            <div class="forbold">Sneakers</div>
+            <div class="no">
+            <div class="no1">collections</div>
+            <div class="no2">men</div>
+            <div class="no3">women</div>
+            <div class="no4">about</div>
+            <div class="no5">contact</div>
+            </div>
+            <div class="twotopimage">
+            <!-- <div class="traliimage">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwUXEs9ihV3fynVtHSriTtrzjBiVgXe-RoZh0ecbY_JEuwAxcPspnKNna0ETJmM97-xac&usqp=CAU">
+            </div>
+            <div class="profileimage">
+                <img src="https://d2qp0siotla746.cloudfront.net/img/use-cases/profile-picture/template_0.jpg">
+            </div>  -->
+        </div>
+            </div>
+        </div>
+    </section>
+        <div class="hre"><hr></div>
+        <section class="twos">
+        <section class="imagediv">
+        
+        <div class="imageprocess">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXxlbnwwfHwwfHw%3D&w=1000&q=80">
+        
+        <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNA8JAobLIjvq8QSn9eCj2_ahYe2FBnLf5aClwVIyNp9quVPWrFNokyTwWJNP4uakrM1Y&usqp=CAU">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFavRsT6jpfTYj4QhG-bvGaedPTvMNQI3bfueNRzTc7XLPq3IAXwLcdZzp2np5D6CYbeQ&usqp=CAU">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUoZtBo6Rm6JHbH5fGSqMvi_98pNxoTePUYkjkfT_DPwrzvRFZ4dL5Ro6pHaf0tM6dupA&usqp=CAU">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5irBXboPKTaSFTPY4HJVyKRgpcym6DJFJg&usqp=CAU">    -->
+   </div>
+    <div class="btn">
+        <button onclick="back()"><i class="bx bx-chevron-left"></i></button>
+        <button onclick="next()"><i class="bx bx-chevron-right"></i></button>
+
+    </div>
+    <div class="image4">
+        
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXxlbnwwfHwwfHw%3D&w=1000&q=80" onclick="first()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNA8JAobLIjvq8QSn9eCj2_ahYe2FBnLf5aClwVIyNp9quVPWrFNokyTwWJNP4uakrM1Y&usqp=CAU " onclick="next()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFavRsT6jpfTYj4QhG-bvGaedPTvMNQI3bfueNRzTc7XLPq3IAXwLcdZzp2np5D6CYbeQ&usqp=CAU" onclick="next()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUoZtBo6Rm6JHbH5fGSqMvi_98pNxoTePUYkjkfT_DPwrzvRFZ4dL5Ro6pHaf0tM6dupA&usqp=CAU" onclick="next()">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5irBXboPKTaSFTPY4HJVyKRgpcym6DJFJg&usqp=CAU" onclick="next()">
+    
+</div>
+      <script>
+        var mainimg = document.querySelector("img");
+        var images =["https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXxlbnwwfHwwfHw%3D&w=1000&q=80",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNA8JAobLIjvq8QSn9eCj2_ahYe2FBnLf5aClwVIyNp9quVPWrFNokyTwWJNP4uakrM1Y&usqp=CAU",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFavRsT6jpfTYj4QhG-bvGaedPTvMNQI3bfueNRzTc7XLPq3IAXwLcdZzp2np5D6CYbeQ&usqp=CAU",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUoZtBo6Rm6JHbH5fGSqMvi_98pNxoTePUYkjkfT_DPwrzvRFZ4dL5Ro6pHaf0tM6dupA&usqp=CAU",
+   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK5irBXboPKTaSFTPY4HJVyKRgpcym6DJFJg&usqp=CAU"]
+   var num=0;
+   function first(){
+    <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c2hvZXxlbnwwfHwwfHw%3D&w=1000&q=80" ></img>
+   }
+
+   function next(){
+     num++;
+     if(num>=images.length){
+        num=0;
+        mainimg.src=images[num];
+     }
+     else{
+        mainimg.src=images[num];
+     }
+   }
+      </script>
+    
+    
+
+        </section>
+      
+        
+<section class="secsection">
+    <div class="anotherside">
+        <div class="sectop">SNEAKERS COMPANY</div>
+        <div class="secbold">Fall Limited Edition Sneakers</div>
+        <div class="secpara">These low profile Sneakersall your perfect causual wear companion. featuring a durable rubber outer sole.They'll withstand everything the weather can offer</div>
+        <div class="samelinedollar">
+           <div class="dollars">$125.00 </div>
+           <div class="dollarper">50%</div>
+        </div>
+        <div class="dollar">$125.00 </div>
+        <div id="purchase">
+            <div class="increase">
+                <div class="sub">-</div>
+                <div class="zero">0</div>
+                <div class="add">+</div>
+            </div>
+            <div class="cart">Add to cart</div>
+        </div>
+    </div>
+</section>
+</section> 
+</section>
+</body>
+</html>
