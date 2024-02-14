@@ -10,14 +10,15 @@ const Postcall = () => {
     });
   };
   function updatePost() {
-    axios
-      .put(`${BaseURL}/1`, {
-        title: "Hello World!",
-        body: "This is an updated post.",
-      })
-      .then((response) => {
-        setPut(response.data);
-      });
+    // axios
+    //   .put(`${BaseURL}/1`, {
+    //     title: "Hello World!",
+    //     body: "This is an updated post.",
+    //   })
+    //   .then((response) => {
+    //     setPut(response.data);
+    //   });
+    // e.preventDefault();
   }
 
   return (

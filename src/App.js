@@ -46,7 +46,7 @@ function App() {
         {/* <Home />
         <About /> */}
         <Added />
-        <Postcall />
+        {/* <Postcall /> */}
       </header>
     </div>
   );

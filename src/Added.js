@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 const Added = () => {
   const [first, setFirst] = useState(null);
+  const [name, setName] = useState(null);
   useEffect(() => {
     console.log("iam excueting");
     axios.get("https://jsonplaceholder.typicode.com/posts").then((res) => {
@@ -11,6 +12,11 @@ const Added = () => {
       setFirst(res.data);
     });
   }, []);
+
+  function postUser(e) {
+    console.log("hi hello");
+    console.log(e.target);
+  }
   return (
     <div className="App">
       <div>
@@ -27,6 +33,8 @@ const Added = () => {
         ) : (
           <h3>Loading...</h3>
         )}
+        <input type="text" value={name} onChange={(e) => e.target.value} />
+        <button onClick={postUser}>Post</button>
       </div>
     </div>
   );
